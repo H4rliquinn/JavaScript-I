@@ -99,11 +99,12 @@ let BMWAndAudi = [];
 //         BMWAndAudi.push(inventory[i]);
 //     }
 // }
-inventory.forEach(i=>{
-    if (i.car_make=="BMW"||i.car_make=="Audi"){
-                BMWAndAudi.push(i);
-            }
-})
+// inventory.forEach(i=>{
+//     if (i.car_make=="BMW"||i.car_make=="Audi"){
+//                 BMWAndAudi.push(i);
+//             }
+// })
+BMWAndAudi=inventory.filter(i=>{return i.car_make=="BMW"||i.car_make=="Audi"})
 console.log(JSON.stringify(BMWAndAudi)); 
 console.table(BMWAndAudi); 
 
